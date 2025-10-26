@@ -1,3 +1,8 @@
+{{ config(
+    materialized='table',
+    schema='GOLD'
+) }}
+
 SELECT 
     cl.customer_id,
     cl.city,

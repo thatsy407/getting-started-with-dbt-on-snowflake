@@ -1,3 +1,8 @@
+{{ config(
+    materialized='table',
+    schema='GOLD'
+) }}
+
 SELECT 
     oh.order_id,
     oh.truck_id,

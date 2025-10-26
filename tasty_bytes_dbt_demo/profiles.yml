@@ -1,19 +1,19 @@
 tasty_bytes:
-  target: dev
+  target: silver
   outputs:
-    dev:
+    silver:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
       database: tasty_bytes_dbt_db
-      schema: dev
+      schema: silver
       warehouse: tasty_bytes_dbt_wh
-    prod:
+    gold:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
       database: tasty_bytes_dbt_db
-      schema: prod
+      schema: gold
       warehouse: tasty_bytes_dbt_wh
