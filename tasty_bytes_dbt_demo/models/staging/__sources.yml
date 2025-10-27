@@ -2,7 +2,7 @@ version: 2
 sources:
 - name: tb_101
   description: 'Point of Sale source data'
-  database: TASTY_BYTES_DBT_DB_TEST
+  database: "{{target.database}}"
   schema: RAW
   tables:
   - name: COUNTRY
