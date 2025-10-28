@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: raw_pos_country
+    columns:
+      - name: CITY
+        tests:
+          - not_null
+          - unique
