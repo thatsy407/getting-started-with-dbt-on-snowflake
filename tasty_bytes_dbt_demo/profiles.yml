@@ -3,11 +3,19 @@ tasty_bytes:
   outputs:
     dev:
       type: snowflake
-      account: 'not needed'
-      user: 'not needed'
+      account: 'VENTURAFOODS-JDB03224'
+      user: 'mstr_user1'
       role: accountadmin
       database: tasty_bytes_dbt_db
       schema: dev
+      warehouse: tasty_bytes_dbt_wh
+    integrations:
+      type: snowflake
+      account: 'VENTURAFOODS-JDB03224'
+      user: 'mstr_user1'
+      role: accountadmin
+      database: tasty_bytes_dbt_db
+      schema: integrations
       warehouse: tasty_bytes_dbt_wh
     prod:
       type: snowflake
