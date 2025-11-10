@@ -2,7 +2,7 @@ version: 2
 sources:
 - name: tb_101
   description: 'Point of Sale source data'
-  database: "{{target.database}}"
+  database: "{{target.database}}" # "{{ env_var('DB_SOURCE_DATABASE', 'DEV') }}_SILVER_DB"
   schema: RAW
   tables:
   - name: COUNTRY
@@ -15,6 +15,7 @@ sources:
         - dbt_utils.accepted_range:  # Numeric range validation
             min_value: 1
             max_value: 1000
+        - is_positive_amount
     - name: COUNTRY
       description: 'Country name'
       data_tests:
