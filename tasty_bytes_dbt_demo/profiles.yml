@@ -1,5 +1,5 @@
 tasty_bytes:
-  target: dev
+  target: integrations
   outputs:
     dev:
       type: snowflake
